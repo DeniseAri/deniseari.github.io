@@ -258,23 +258,6 @@ input, select, textarea {
 			width: 100%;
 		}
 
-		@media screen and (max-width: 980px) {
-
-			.container {
-				width: 100% !important;
-				max-width: 100% !important;
-			}
-
-		}
-
-		@media screen and (max-width: 480px) {
-
-			.container {
-				max-width: calc(100% - 3em);
-			}
-
-		}
-
 /* Row */
 
 	.row {
@@ -347,6 +330,23 @@ input, select, textarea {
 		.row > .col-4 {
 			width: 33.33333%;
 			padding-left: 1em;
+
+
+			@media screen and (max-device-width: 736px) {
+
+				.col-4 {
+					width: 50%;
+				}
+	
+			}
+			@media screen and (max-device-width: 500px) {
+
+				.col-4 {
+					width: 100%;
+				}
+	
+			}
+
 		}
 
 		.row > .off-4 {
@@ -1326,8 +1326,8 @@ input, select, textarea {
 					margin-left: 25%;
 				}
 
-				.row > .col-4-small {
-					width: 33.33333%;
+				.row > .col-4 {
+					width: 50%;
 				}
 
 				.row > .off-4-small {
@@ -1452,6 +1452,7 @@ input, select, textarea {
 				.row {
 					margin-top: 0;
 					margin-left: -1.5em;
+									
 				}
 
 					.row > * {
@@ -1571,8 +1572,8 @@ input, select, textarea {
 					margin-left: 25%;
 				}
 
-				.row > .col-4-xsmall {
-					width: 33.33333%;
+				.row > .col-4 {
+					width: 100%;
 				}
 
 				.row > .off-4-xsmall {
@@ -2994,16 +2995,14 @@ input, select, textarea {
 
 			#header {
 				padding: 3em 3em 3em 3em;
-				width: 30%;
+				width: 100%;
 			}
 
 				#header h1 {
 					font-size: 1.25em;
 				}
 
-					#header h1 br {
-						display: none;
-					}
+					
 
 				#header > .inner {
 					margin-bottom: 0;
@@ -3022,10 +3021,11 @@ input, select, textarea {
 		/* Main */
 
 			#main {
-				margin-left: 30%;
+				margin-left: 0%;
 				max-width: none;
 				padding: 3em 3em 3em 3em;
-				width: calc(100% - 30%);
+				
+
 			}
 
 	}
